@@ -3,7 +3,11 @@
     {
       "projectId": "d8kCMg1X6mbsfVAwxYN8FR",
       "version": "latest",
-      "dependencies": {},
+      "dependencies": {
+        "ohDidvG9XsCeFumugENU3J": "6.29.0",
+        "jkU633o1Cz7HrJdwdxhVHk": "16.13.0",
+        "YUiM7yqBWAqsh8KSnrdj7": "0.33.0"
+      },
       "lang": "ts",
       "fileLocks": [
         {
@@ -12,19 +16,71 @@
           "checksum": "492669438472161342102ef02700b5f0"
         },
         {
+          "type": "renderModule",
+          "assetId": "qHG1l8cWRqZX",
+          "checksum": "898d29eec5b238e029248bf81f8341c9"
+        },
+        {
+          "type": "cssRules",
+          "assetId": "qHG1l8cWRqZX",
+          "checksum": "898d29eec5b238e029248bf81f8341c9"
+        },
+        {
           "assetId": "d8kCMg1X6mbsfVAwxYN8FR",
           "type": "projectCss",
           "checksum": "b70157e19249e7b2a920dc8b234da76e"
         },
         {
-          "type": "renderModule",
-          "assetId": "qHG1l8cWRqZX",
-          "checksum": "8836c3204b55cc2f980e6eca46041ab4"
+          "assetId": "d8kCMg1X6mbsfVAwxYN8FR",
+          "checksum": "ea46a67e22e322242107840c354ba4c6",
+          "type": "globalContexts"
+        }
+      ],
+      "codegenVersion": "0.0.1"
+    },
+    {
+      "projectId": "YUiM7yqBWAqsh8KSnrdj7",
+      "version": "0.33.0",
+      "dependencies": {},
+      "lang": "ts",
+      "fileLocks": [
+        {
+          "assetId": "YUiM7yqBWAqsh8KSnrdj7",
+          "type": "projectCss",
+          "checksum": "21b499a9da4edbc2266c72c2ba127787"
+        }
+      ],
+      "codegenVersion": "0.0.1"
+    },
+    {
+      "projectId": "jkU633o1Cz7HrJdwdxhVHk",
+      "version": "16.13.0",
+      "dependencies": {},
+      "lang": "ts",
+      "fileLocks": [
+        {
+          "assetId": "jkU633o1Cz7HrJdwdxhVHk",
+          "type": "projectCss",
+          "checksum": "cf57d229ecea50678d9d8d3bc0e3dd9b"
+        }
+      ],
+      "codegenVersion": "0.0.1"
+    },
+    {
+      "projectId": "ohDidvG9XsCeFumugENU3J",
+      "version": "6.29.0",
+      "dependencies": {},
+      "lang": "ts",
+      "fileLocks": [
+        {
+          "assetId": "ohDidvG9XsCeFumugENU3J",
+          "type": "projectCss",
+          "checksum": "ba2a60a163fca4f4d510275088a2be53"
         },
         {
-          "type": "cssRules",
-          "assetId": "qHG1l8cWRqZX",
-          "checksum": "8836c3204b55cc2f980e6eca46041ab4"
+          "assetId": "ohDidvG9XsCeFumugENU3J",
+          "checksum": "de0a0e65174a6a185a8f822af51c6bdd",
+          "type": "globalContexts"
         }
       ],
       "codegenVersion": "0.0.1"

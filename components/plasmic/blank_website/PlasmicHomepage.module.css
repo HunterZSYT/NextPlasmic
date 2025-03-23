@@ -64,3 +64,10 @@
   height: auto;
   min-width: 0;
 }
+.table2:global(.__wab_instance) {
+  width: 893px;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  padding: 16px;
+}
