@@ -24,7 +24,7 @@
     {
       "projectId": "d8kCMg1X6mbsfVAwxYN8FR",
       "projectApiToken": "uFUNtXEUQCh3zONkaMkb1utlld9j5f9yvO8LB9yfU27V90tgaXANSJlzs4bw4rxTgtXNBkaGPICa6BouyO3A",
-      "projectName": "Blank website",
+      "projectName": "Landing Page OITS",
       "version": "latest",
       "cssFilePath": "plasmic/blank_website/plasmic.module.css",
       "components": [
@@ -366,6 +366,19 @@
           "cssFilePath": "plasmic/blank_website/PlasmicSidebar.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "Om6OOLFVdEE_",
+          "name": "TableFigma",
+          "type": "managed",
+          "projectId": "d8kCMg1X6mbsfVAwxYN8FR",
+          "renderModuleFilePath": "plasmic/landing_page_oits/PlasmicTableFigma.tsx",
+          "importSpec": {
+            "modulePath": "TableFigma.tsx"
+          },
+          "cssFilePath": "plasmic/landing_page_oits/PlasmicTableFigma.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -488,6 +501,26 @@
           "id": "qO-rGewi-r3l",
           "name": "Divider2Icon",
           "moduleFilePath": "plasmic/blank_website/icons/PlasmicIcon__Divider2.tsx"
+        },
+        {
+          "id": "826qKKi-fq1F",
+          "name": "ArrowDownwardFilledIcon",
+          "moduleFilePath": "plasmic/landing_page_oits/icons/PlasmicIcon__ArrowDownwardFilled.tsx"
+        },
+        {
+          "id": "Zxu_aMq0XGa9",
+          "name": "ArrowDropDownFilledIcon",
+          "moduleFilePath": "plasmic/landing_page_oits/icons/PlasmicIcon__ArrowDropDownFilled.tsx"
+        },
+        {
+          "id": "1_tPXlqUP1BF",
+          "name": "ChevronLeftFilledIcon",
+          "moduleFilePath": "plasmic/landing_page_oits/icons/PlasmicIcon__ChevronLeftFilled.tsx"
+        },
+        {
+          "id": "78M-0AMDAqoz",
+          "name": "ChevronRightFilledIcon",
+          "moduleFilePath": "plasmic/landing_page_oits/icons/PlasmicIcon__ChevronRightFilled.tsx"
         }
       ],
       "images": [

@@ -14,7 +14,6 @@ export interface GlobalContextsProviderProps {
   antdConfigProviderProps?: Partial<
     Omit<React.ComponentProps<typeof AntdConfigProvider>, "children">
   >;
-
   parallaxProviderWrapperProps?: Partial<
     Omit<React.ComponentProps<typeof ParallaxProviderWrapper>, "children">
   >;
@@ -125,7 +124,7 @@ export default function GlobalContextsProvider(
           parallaxProviderWrapperProps &&
           "scrollAxis" in parallaxProviderWrapperProps
             ? parallaxProviderWrapperProps.scrollAxis!
-            : undefined
+            : "vertical"
         }
       >
         {children}
