@@ -65,7 +65,6 @@ import {
   usePlasmicInvalidate
 } from "@plasmicapp/react-web/lib/data-sources";
 
-import { ParallaxWrapper } from "@plasmicpkgs/react-scroll-parallax";
 import { Fetcher } from "@plasmicapp/react-web/lib/data-sources";
 
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -1278,54 +1277,37 @@ function PlasmicHomepage__RenderFunc(props: {
                       hasGap={true}
                       className={classNames(projectcss.all, sty.navIcon)}
                     >
-                      <ParallaxWrapper
-                        className={classNames(
-                          "__wab_instance",
-                          sty.scrollParallax__koz1
-                        )}
-                        speed={20}
+                      <Stack__
+                        as={"div"}
+                        data-plasmic-name={"frame23"}
+                        data-plasmic-override={overrides.frame23}
+                        hasGap={true}
+                        className={classNames(projectcss.all, sty.frame23)}
                       >
-                        <Stack__
-                          as={"div"}
-                          data-plasmic-name={"frame23"}
-                          data-plasmic-override={overrides.frame23}
-                          hasGap={true}
-                          className={classNames(projectcss.all, sty.frame23)}
+                        <div
+                          data-plasmic-name={"icon19"}
+                          data-plasmic-override={overrides.icon19}
+                          className={classNames(projectcss.all, sty.icon19)}
                         >
-                          <ParallaxWrapper
+                          <PlasmicLink__
                             className={classNames(
-                              "__wab_instance",
-                              sty.scrollParallax___9WcF
+                              projectcss.all,
+                              projectcss.a,
+                              sty.link__dms5I
                             )}
-                            previewInEditor={false}
-                            speed={20}
+                            component={Link}
+                            platform={"nextjs"}
                           >
-                            <div
-                              data-plasmic-name={"icon19"}
-                              data-plasmic-override={overrides.icon19}
-                              className={classNames(projectcss.all, sty.icon19)}
-                            >
-                              <PlasmicLink__
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.a,
-                                  sty.link__dms5I
-                                )}
-                                component={Link}
-                                platform={"nextjs"}
-                              >
-                                <Icon13Icon
-                                  className={classNames(
-                                    projectcss.all,
-                                    sty.svg__ef0C4
-                                  )}
-                                  role={"img"}
-                                />
-                              </PlasmicLink__>
-                            </div>
-                          </ParallaxWrapper>
-                        </Stack__>
-                      </ParallaxWrapper>
+                            <Icon13Icon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg__ef0C4
+                              )}
+                              role={"img"}
+                            />
+                          </PlasmicLink__>
+                        </div>
+                      </Stack__>
                     </Stack__>
                   </Stack__>
                   <Stack__
