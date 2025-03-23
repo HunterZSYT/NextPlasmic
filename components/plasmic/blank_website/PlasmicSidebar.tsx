@@ -387,11 +387,9 @@ function PlasmicSidebar__RenderFunc(props: {
         hasGap={true}
         className={classNames(projectcss.all, sty.sideMenu)}
       >
-        <Stack__
-          as={"div"}
+        <div
           data-plasmic-name={"frame3"}
           data-plasmic-override={overrides.frame3}
-          hasGap={true}
           className={classNames(projectcss.all, sty.frame3)}
         >
           <Stack__
@@ -567,7 +565,7 @@ function PlasmicSidebar__RenderFunc(props: {
               </div>
             </Stack__>
           </Stack__>
-        </Stack__>
+        </div>
       </Stack__>
       {(triggers.hover_sidebar ? true : false) ? (
         <Stack__

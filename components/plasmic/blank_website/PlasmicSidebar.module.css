@@ -1,6 +1,6 @@
 .sidebar {
   width: auto;
-  height: 900px;
+  height: auto;
   display: inline-flex;
   flex-direction: row;
   padding-left: 8px;
@@ -9,7 +9,7 @@
 }
 .sidebar > :global(.__wab_flex-container) {
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   margin-left: calc(0px - 10px);
   width: calc(100% + 10px);
@@ -65,34 +65,20 @@
   position: relative;
   overflow: hidden;
   flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   flex-shrink: 0;
   border-radius: 4px;
   padding: 8px;
-}
-.frame3 > :global(.__wab_flex-container) {
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  margin-top: calc(0px - 8px);
-  height: calc(100% + 8px);
-}
-.frame3 > :global(.__wab_flex-container) > *,
-.frame3 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.frame3 > :global(.__wab_flex-container) > picture > img,
-.frame3
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-top: 8px;
 }
 .logoHolder {
   height: 120px;
   display: flex;
   position: relative;
-  align-self: stretch;
   overflow: hidden;
   flex-direction: column;
+  left: auto;
+  top: auto;
   flex-shrink: 0;
   padding: 16px;
 }
@@ -127,6 +113,8 @@
   position: relative;
   flex-grow: 1;
   flex-direction: column;
+  left: auto;
+  top: auto;
 }
 .frame9 > :global(.__wab_flex-container) {
   flex-direction: column;
@@ -429,6 +417,8 @@
   flex-direction: column;
   padding-top: 24px;
   padding-bottom: 24px;
+  left: auto;
+  top: auto;
 }
 .frame15 > :global(.__wab_flex-container) {
   flex-direction: column;

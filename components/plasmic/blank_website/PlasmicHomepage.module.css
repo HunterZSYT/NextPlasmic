@@ -47,10 +47,19 @@
   min-height: 0;
 }
 .sidebar:global(.__wab_instance) {
-  position: sticky;
+  height: auto;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+  transform: none;
   left: 0px;
   top: 0px;
   z-index: 1;
+  position: sticky;
+  margin-top: 102px;
+  -webkit-transition-property: all;
+  -webkit-transition-timing-function: ease-in;
+  -webkit-transition-duration: 1s;
 }
 .centerContent {
   display: flex;
