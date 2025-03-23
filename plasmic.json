@@ -1044,7 +1044,8 @@
           "componentImportPath": "@plasmicpkgs/react-scroll-parallax"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "4vjRXvnb4XuY6J15w9oRcQ",
@@ -1072,7 +1073,8 @@
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "5ZtnypMovRHeeP3YTdPCYL",
@@ -1100,7 +1102,8 @@
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "d2Pfbr6bN5UwJ4ss7Fh3HB",
@@ -27229,7 +27232,8 @@
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "gmeH6XgPaBtkt51HunAo4g",
@@ -27437,7 +27441,8 @@
           "componentImportPath": "@plasmicpkgs/react-aria/skinny/registerDialog"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     }
   ],
   "globalVariants": {

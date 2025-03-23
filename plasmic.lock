@@ -36,11 +36,6 @@
           "type": "globalContexts"
         },
         {
-          "assetId": "d8kCMg1X6mbsfVAwxYN8FR",
-          "type": "projectCss",
-          "checksum": "51fa4ba8022e7dced541f370507124b4"
-        },
-        {
           "type": "renderModule",
           "assetId": "VOoclJJpi_k6",
           "checksum": "0ccd214954386d0e41c7c3f6364cd5f1"
@@ -434,6 +429,11 @@
           "type": "image",
           "assetId": "KZDPXDcVGvvq",
           "checksum": "e725a29448db17442f08bbf41ad600f4"
+        },
+        {
+          "assetId": "d8kCMg1X6mbsfVAwxYN8FR",
+          "type": "projectCss",
+          "checksum": "51fa4ba8022e7dced541f370507124b4"
         }
       ],
       "codegenVersion": "0.0.1"
