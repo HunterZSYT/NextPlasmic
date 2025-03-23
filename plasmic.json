@@ -353,6 +353,19 @@
           "cssFilePath": "plasmic/blank_website/PlasmicTooltip.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "JdlysH1rRgEx",
+          "name": "Sidebar",
+          "type": "managed",
+          "projectId": "d8kCMg1X6mbsfVAwxYN8FR",
+          "renderModuleFilePath": "plasmic/blank_website/PlasmicSidebar.tsx",
+          "importSpec": {
+            "modulePath": "Sidebar.tsx"
+          },
+          "cssFilePath": "plasmic/blank_website/PlasmicSidebar.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -465,6 +478,16 @@
           "id": "TjW_w1rmHQvX",
           "name": "Icon13Icon",
           "moduleFilePath": "plasmic/blank_website/icons/PlasmicIcon__Icon13.tsx"
+        },
+        {
+          "id": "w9Y1CSFYuAeo",
+          "name": "DividerIcon",
+          "moduleFilePath": "plasmic/blank_website/icons/PlasmicIcon__Divider.tsx"
+        },
+        {
+          "id": "qO-rGewi-r3l",
+          "name": "Divider2Icon",
+          "moduleFilePath": "plasmic/blank_website/icons/PlasmicIcon__Divider2.tsx"
         }
       ],
       "images": [

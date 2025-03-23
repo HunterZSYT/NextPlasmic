@@ -65,6 +65,7 @@ import {
   usePlasmicInvalidate
 } from "@plasmicapp/react-web/lib/data-sources";
 
+import Sidebar from "../../Sidebar"; // plasmic-import: JdlysH1rRgEx/component
 import { Fetcher } from "@plasmicapp/react-web/lib/data-sources";
 
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -76,14 +77,6 @@ import plasmic_library_tailwind_3_4_number_tokens_css from "../library_tailwind_
 import projectcss from "./plasmic.module.css"; // plasmic-import: d8kCMg1X6mbsfVAwxYN8FR/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: qHG1l8cWRqZX/css
 
-import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: wr36dOuggtTv/icon
-import Icon2Icon from "./icons/PlasmicIcon__Icon2"; // plasmic-import: R93toslCEnmV/icon
-import Icon3Icon from "./icons/PlasmicIcon__Icon3"; // plasmic-import: 3euzdYjnYRw2/icon
-import Icon4Icon from "./icons/PlasmicIcon__Icon4"; // plasmic-import: Y7fNoyLf8q8-/icon
-import Icon5Icon from "./icons/PlasmicIcon__Icon5"; // plasmic-import: i5InJXZjLLY6/icon
-import Icon6Icon from "./icons/PlasmicIcon__Icon6"; // plasmic-import: S85FgQyb2pM_/icon
-import Icon7Icon from "./icons/PlasmicIcon__Icon7"; // plasmic-import: OTsIWiktAwo9/icon
-import Icon8Icon from "./icons/PlasmicIcon__Icon8"; // plasmic-import: XLVXsxz7ZIAE/icon
 import StarSharpIcon from "./icons/PlasmicIcon__StarSharp"; // plasmic-import: q0IqdE-HpFni/icon
 import StarSharp2Icon from "./icons/PlasmicIcon__StarSharp2"; // plasmic-import: pJESGUWifRlU/icon
 import Icon9Icon from "./icons/PlasmicIcon__Icon9"; // plasmic-import: j2pOrDWM7hg3/icon
@@ -108,29 +101,7 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>("onClick");
 export type PlasmicHomepage__OverridesType = {
   home?: Flex__<"div">;
   landingPage?: Flex__<"div">;
-  sidebar?: Flex__<"div">;
-  sideMenu?: Flex__<"div">;
-  frame3?: Flex__<"div">;
-  logoHolder?: Flex__<"div">;
-  connect61?: Flex__<"div">;
-  frame9?: Flex__<"div">;
-  frame8?: Flex__<"div">;
-  icon?: Flex__<"div">;
-  frame11?: Flex__<"div">;
-  icon2?: Flex__<"div">;
-  frame10?: Flex__<"div">;
-  icon3?: Flex__<"div">;
-  frame13?: Flex__<"div">;
-  icon4?: Flex__<"div">;
-  frame12?: Flex__<"div">;
-  icon5?: Flex__<"div">;
-  frame14?: Flex__<"div">;
-  icon6?: Flex__<"div">;
-  frame15?: Flex__<"div">;
-  frame16?: Flex__<"div">;
-  icon7?: Flex__<"div">;
-  frame17?: Flex__<"div">;
-  icon8?: Flex__<"div">;
+  sidebar?: Flex__<typeof Sidebar>;
   centerContent?: Flex__<"div">;
   headerContent?: Flex__<"div">;
   breadCrumbs?: Flex__<"div">;
@@ -366,206 +337,12 @@ function PlasmicHomepage__RenderFunc(props: {
             data-plasmic-override={overrides.landingPage}
             className={classNames(projectcss.all, sty.landingPage)}
           >
-            <Stack__
-              as={"div"}
+            <Sidebar
               data-plasmic-name={"sidebar"}
               data-plasmic-override={overrides.sidebar}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.sidebar)}
-            >
-              <Stack__
-                as={"div"}
-                data-plasmic-name={"sideMenu"}
-                data-plasmic-override={overrides.sideMenu}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.sideMenu)}
-              >
-                <Stack__
-                  as={"div"}
-                  data-plasmic-name={"frame3"}
-                  data-plasmic-override={overrides.frame3}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.frame3)}
-                >
-                  <Stack__
-                    as={"div"}
-                    data-plasmic-name={"logoHolder"}
-                    data-plasmic-override={overrides.logoHolder}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.logoHolder)}
-                  >
-                    <div
-                      data-plasmic-name={"connect61"}
-                      data-plasmic-override={overrides.connect61}
-                      className={classNames(projectcss.all, sty.connect61)}
-                    />
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
-                    data-plasmic-name={"frame9"}
-                    data-plasmic-override={overrides.frame9}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.frame9)}
-                  >
-                    <Stack__
-                      as={"div"}
-                      data-plasmic-name={"frame8"}
-                      data-plasmic-override={overrides.frame8}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.frame8)}
-                    >
-                      <div
-                        data-plasmic-name={"icon"}
-                        data-plasmic-override={overrides.icon}
-                        className={classNames(projectcss.all, sty.icon)}
-                      >
-                        <IconIcon
-                          className={classNames(projectcss.all, sty.svg__bizCn)}
-                          role={"img"}
-                        />
-                      </div>
-                    </Stack__>
-                    <Stack__
-                      as={"div"}
-                      data-plasmic-name={"frame11"}
-                      data-plasmic-override={overrides.frame11}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.frame11)}
-                    >
-                      <div
-                        data-plasmic-name={"icon2"}
-                        data-plasmic-override={overrides.icon2}
-                        className={classNames(projectcss.all, sty.icon2)}
-                      >
-                        <Icon2Icon
-                          className={classNames(
-                            projectcss.all,
-                            sty.svg___4CXb1
-                          )}
-                          role={"img"}
-                        />
-                      </div>
-                    </Stack__>
-                    <Stack__
-                      as={"div"}
-                      data-plasmic-name={"frame10"}
-                      data-plasmic-override={overrides.frame10}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.frame10)}
-                    >
-                      <div
-                        data-plasmic-name={"icon3"}
-                        data-plasmic-override={overrides.icon3}
-                        className={classNames(projectcss.all, sty.icon3)}
-                      >
-                        <Icon3Icon
-                          className={classNames(projectcss.all, sty.svg__rI1Ia)}
-                          role={"img"}
-                        />
-                      </div>
-                    </Stack__>
-                    <Stack__
-                      as={"div"}
-                      data-plasmic-name={"frame13"}
-                      data-plasmic-override={overrides.frame13}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.frame13)}
-                    >
-                      <div
-                        data-plasmic-name={"icon4"}
-                        data-plasmic-override={overrides.icon4}
-                        className={classNames(projectcss.all, sty.icon4)}
-                      >
-                        <Icon4Icon
-                          className={classNames(projectcss.all, sty.svg__epNdH)}
-                          role={"img"}
-                        />
-                      </div>
-                    </Stack__>
-                    <Stack__
-                      as={"div"}
-                      data-plasmic-name={"frame12"}
-                      data-plasmic-override={overrides.frame12}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.frame12)}
-                    >
-                      <div
-                        data-plasmic-name={"icon5"}
-                        data-plasmic-override={overrides.icon5}
-                        className={classNames(projectcss.all, sty.icon5)}
-                      >
-                        <Icon5Icon
-                          className={classNames(projectcss.all, sty.svg__tbWpl)}
-                          role={"img"}
-                        />
-                      </div>
-                    </Stack__>
-                    <Stack__
-                      as={"div"}
-                      data-plasmic-name={"frame14"}
-                      data-plasmic-override={overrides.frame14}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.frame14)}
-                    >
-                      <div
-                        data-plasmic-name={"icon6"}
-                        data-plasmic-override={overrides.icon6}
-                        className={classNames(projectcss.all, sty.icon6)}
-                      >
-                        <Icon6Icon
-                          className={classNames(projectcss.all, sty.svg__uz4JX)}
-                          role={"img"}
-                        />
-                      </div>
-                    </Stack__>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
-                    data-plasmic-name={"frame15"}
-                    data-plasmic-override={overrides.frame15}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.frame15)}
-                  >
-                    <Stack__
-                      as={"div"}
-                      data-plasmic-name={"frame16"}
-                      data-plasmic-override={overrides.frame16}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.frame16)}
-                    >
-                      <div
-                        data-plasmic-name={"icon7"}
-                        data-plasmic-override={overrides.icon7}
-                        className={classNames(projectcss.all, sty.icon7)}
-                      >
-                        <Icon7Icon
-                          className={classNames(projectcss.all, sty.svg__xnDhx)}
-                          role={"img"}
-                        />
-                      </div>
-                    </Stack__>
-                    <Stack__
-                      as={"div"}
-                      data-plasmic-name={"frame17"}
-                      data-plasmic-override={overrides.frame17}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.frame17)}
-                    >
-                      <div
-                        data-plasmic-name={"icon8"}
-                        data-plasmic-override={overrides.icon8}
-                        className={classNames(projectcss.all, sty.icon8)}
-                      >
-                        <Icon8Icon
-                          className={classNames(projectcss.all, sty.svg__r8Gf)}
-                          role={"img"}
-                        />
-                      </div>
-                    </Stack__>
-                  </Stack__>
-                </Stack__>
-              </Stack__>
-            </Stack__>
+              className={classNames("__wab_instance", sty.sidebar)}
+            />
+
             <Stack__
               as={"div"}
               data-plasmic-name={"centerContent"}
@@ -1932,28 +1709,6 @@ const PlasmicDescendants = {
     "home",
     "landingPage",
     "sidebar",
-    "sideMenu",
-    "frame3",
-    "logoHolder",
-    "connect61",
-    "frame9",
-    "frame8",
-    "icon",
-    "frame11",
-    "icon2",
-    "frame10",
-    "icon3",
-    "frame13",
-    "icon4",
-    "frame12",
-    "icon5",
-    "frame14",
-    "icon6",
-    "frame15",
-    "frame16",
-    "icon7",
-    "frame17",
-    "icon8",
     "centerContent",
     "headerContent",
     "breadCrumbs",
@@ -2085,28 +1840,6 @@ const PlasmicDescendants = {
   landingPage: [
     "landingPage",
     "sidebar",
-    "sideMenu",
-    "frame3",
-    "logoHolder",
-    "connect61",
-    "frame9",
-    "frame8",
-    "icon",
-    "frame11",
-    "icon2",
-    "frame10",
-    "icon3",
-    "frame13",
-    "icon4",
-    "frame12",
-    "icon5",
-    "frame14",
-    "icon6",
-    "frame15",
-    "frame16",
-    "icon7",
-    "frame17",
-    "icon8",
     "centerContent",
     "headerContent",
     "breadCrumbs",
@@ -2235,112 +1968,7 @@ const PlasmicDescendants = {
     "iconButton9",
     "icon26"
   ],
-  sidebar: [
-    "sidebar",
-    "sideMenu",
-    "frame3",
-    "logoHolder",
-    "connect61",
-    "frame9",
-    "frame8",
-    "icon",
-    "frame11",
-    "icon2",
-    "frame10",
-    "icon3",
-    "frame13",
-    "icon4",
-    "frame12",
-    "icon5",
-    "frame14",
-    "icon6",
-    "frame15",
-    "frame16",
-    "icon7",
-    "frame17",
-    "icon8"
-  ],
-  sideMenu: [
-    "sideMenu",
-    "frame3",
-    "logoHolder",
-    "connect61",
-    "frame9",
-    "frame8",
-    "icon",
-    "frame11",
-    "icon2",
-    "frame10",
-    "icon3",
-    "frame13",
-    "icon4",
-    "frame12",
-    "icon5",
-    "frame14",
-    "icon6",
-    "frame15",
-    "frame16",
-    "icon7",
-    "frame17",
-    "icon8"
-  ],
-  frame3: [
-    "frame3",
-    "logoHolder",
-    "connect61",
-    "frame9",
-    "frame8",
-    "icon",
-    "frame11",
-    "icon2",
-    "frame10",
-    "icon3",
-    "frame13",
-    "icon4",
-    "frame12",
-    "icon5",
-    "frame14",
-    "icon6",
-    "frame15",
-    "frame16",
-    "icon7",
-    "frame17",
-    "icon8"
-  ],
-  logoHolder: ["logoHolder", "connect61"],
-  connect61: ["connect61"],
-  frame9: [
-    "frame9",
-    "frame8",
-    "icon",
-    "frame11",
-    "icon2",
-    "frame10",
-    "icon3",
-    "frame13",
-    "icon4",
-    "frame12",
-    "icon5",
-    "frame14",
-    "icon6"
-  ],
-  frame8: ["frame8", "icon"],
-  icon: ["icon"],
-  frame11: ["frame11", "icon2"],
-  icon2: ["icon2"],
-  frame10: ["frame10", "icon3"],
-  icon3: ["icon3"],
-  frame13: ["frame13", "icon4"],
-  icon4: ["icon4"],
-  frame12: ["frame12", "icon5"],
-  icon5: ["icon5"],
-  frame14: ["frame14", "icon6"],
-  icon6: ["icon6"],
-  frame15: ["frame15", "frame16", "icon7", "frame17", "icon8"],
-  frame16: ["frame16", "icon7"],
-  icon7: ["icon7"],
-  frame17: ["frame17", "icon8"],
-  icon8: ["icon8"],
+  sidebar: ["sidebar"],
   centerContent: [
     "centerContent",
     "headerContent",
@@ -3187,29 +2815,7 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   home: "div";
   landingPage: "div";
-  sidebar: "div";
-  sideMenu: "div";
-  frame3: "div";
-  logoHolder: "div";
-  connect61: "div";
-  frame9: "div";
-  frame8: "div";
-  icon: "div";
-  frame11: "div";
-  icon2: "div";
-  frame10: "div";
-  icon3: "div";
-  frame13: "div";
-  icon4: "div";
-  frame12: "div";
-  icon5: "div";
-  frame14: "div";
-  icon6: "div";
-  frame15: "div";
-  frame16: "div";
-  icon7: "div";
-  frame17: "div";
-  icon8: "div";
+  sidebar: typeof Sidebar;
   centerContent: "div";
   headerContent: "div";
   breadCrumbs: "div";
@@ -3401,28 +3007,6 @@ export const PlasmicHomepage = Object.assign(
     // Helper components rendering sub-elements
     landingPage: makeNodeComponent("landingPage"),
     sidebar: makeNodeComponent("sidebar"),
-    sideMenu: makeNodeComponent("sideMenu"),
-    frame3: makeNodeComponent("frame3"),
-    logoHolder: makeNodeComponent("logoHolder"),
-    connect61: makeNodeComponent("connect61"),
-    frame9: makeNodeComponent("frame9"),
-    frame8: makeNodeComponent("frame8"),
-    icon: makeNodeComponent("icon"),
-    frame11: makeNodeComponent("frame11"),
-    icon2: makeNodeComponent("icon2"),
-    frame10: makeNodeComponent("frame10"),
-    icon3: makeNodeComponent("icon3"),
-    frame13: makeNodeComponent("frame13"),
-    icon4: makeNodeComponent("icon4"),
-    frame12: makeNodeComponent("frame12"),
-    icon5: makeNodeComponent("icon5"),
-    frame14: makeNodeComponent("frame14"),
-    icon6: makeNodeComponent("icon6"),
-    frame15: makeNodeComponent("frame15"),
-    frame16: makeNodeComponent("frame16"),
-    icon7: makeNodeComponent("icon7"),
-    frame17: makeNodeComponent("frame17"),
-    icon8: makeNodeComponent("icon8"),
     centerContent: makeNodeComponent("centerContent"),
     headerContent: makeNodeComponent("headerContent"),
     breadCrumbs: makeNodeComponent("breadCrumbs"),
