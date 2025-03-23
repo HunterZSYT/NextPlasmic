@@ -96,7 +96,7 @@ type ArgPropType = keyof PlasmicHomepage__ArgsType;
 export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage__OverridesType = {
-  root?: Flex__<"div">;
+  home?: Flex__<"div">;
   section?: Flex__<"section">;
   h1?: Flex__<"h1">;
   table2?: Flex__<typeof RichTable>;
@@ -241,8 +241,8 @@ function PlasmicHomepage__RenderFunc(props: {
 
       <div className={projectcss.plasmic_page_wrapper}>
         <div
-          data-plasmic-name={"root"}
-          data-plasmic-override={overrides.root}
+          data-plasmic-name={"home"}
+          data-plasmic-override={overrides.home}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
           className={classNames(
@@ -253,7 +253,7 @@ function PlasmicHomepage__RenderFunc(props: {
             projectcss.plasmic_tokens,
             plasmic_antd_5_hostless_css.plasmic_tokens,
             plasmic_plasmic_rich_components_css.plasmic_tokens,
-            sty.root
+            sty.home
           )}
         >
           <section
@@ -465,7 +465,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   <FormItemWrapper
                     className={classNames(
                       "__wab_instance",
-                      sty.formField__ucmHy
+                      sty.formField__r9thY
                     )}
                     label={"Name"}
                     name={"name"}
@@ -477,7 +477,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   <FormItemWrapper
                     className={classNames(
                       "__wab_instance",
-                      sty.formField___1XxSw
+                      sty.formField__u8MHo
                     )}
                     label={"Message"}
                     name={"message"}
@@ -495,7 +495,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__qD9Ij
+                        sty.text__sa14W
                       )}
                     >
                       {"Submit"}
@@ -512,8 +512,8 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: [
-    "root",
+  home: [
+    "home",
     "section",
     "h1",
     "table2",
@@ -534,7 +534,7 @@ type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  home: "div";
   section: "section";
   h1: "h1";
   table2: typeof RichTable;
@@ -591,7 +591,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       forNode: nodeName
     });
   };
-  if (nodeName === "root") {
+  if (nodeName === "home") {
     func.displayName = "PlasmicHomepage";
   } else {
     func.displayName = `PlasmicHomepage.${nodeName}`;
@@ -601,7 +601,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicHomepage = Object.assign(
   // Top-level PlasmicHomepage renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent("home"),
   {
     // Helper components rendering sub-elements
     section: makeNodeComponent("section"),

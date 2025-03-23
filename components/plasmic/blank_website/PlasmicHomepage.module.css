@@ -1,11 +1,13 @@
-.root {
+.home {
   display: grid;
   position: relative;
   width: 100%;
   height: 100%;
   align-content: flex-start;
   justify-items: center;
-  background: #ffffff;
+  background: linear-gradient(89.6373733260375deg, #ff9fc0 0%, #56b9ff 100%) 0%
+      0% / 100% 100% repeat,
+    #ffffff;
   min-width: 0;
   min-height: 0;
   grid-template-columns:
@@ -17,11 +19,11 @@
     minmax(0, var(--plsmc-wide-chunk)) 1fr var(--plsmc-viewport-gap);
   padding: 0px;
 }
-.root > * {
+.home > * {
   grid-column: 4;
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .root > * {
+  .home > * {
     grid-column: 4;
   }
 }
@@ -33,7 +35,7 @@
   grid-row-gap: 16px;
   align-content: flex-start;
   justify-items: center;
-  background: #ffffff;
+  background: none;
   grid-column-start: 1 !important;
   grid-column-end: -1 !important;
   grid-template-columns:
@@ -86,7 +88,7 @@
   min-width: 0;
   padding: 8px;
 }
-.formField__ucmHy:global(.__wab_instance) {
+.formField__r9thY:global(.__wab_instance) {
   width: 100%;
   margin-bottom: 24px;
   min-width: 0;
@@ -95,7 +97,7 @@
   max-width: 100%;
   object-fit: cover;
 }
-.formField___1XxSw:global(.__wab_instance) {
+.formField__u8MHo:global(.__wab_instance) {
   width: 100%;
   margin-bottom: 24px;
   min-width: 0;
@@ -108,7 +110,7 @@
   max-width: 100%;
   object-fit: cover;
 }
-.text__qD9Ij {
+.text__sa14W {
   position: relative;
   width: 100%;
   height: auto;
