@@ -1289,23 +1289,13 @@ function PlasmicHomepage__RenderFunc(props: {
                           data-plasmic-override={overrides.icon19}
                           className={classNames(projectcss.all, sty.icon19)}
                         >
-                          <PlasmicLink__
+                          <Icon13Icon
                             className={classNames(
                               projectcss.all,
-                              projectcss.a,
-                              sty.link__dms5I
+                              sty.svg__ef0C4
                             )}
-                            component={Link}
-                            platform={"nextjs"}
-                          >
-                            <Icon13Icon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg__ef0C4
-                              )}
-                              role={"img"}
-                            />
-                          </PlasmicLink__>
+                            role={"img"}
+                          />
                         </div>
                       </Stack__>
                     </Stack__>
