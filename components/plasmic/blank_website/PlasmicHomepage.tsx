@@ -67,6 +67,14 @@ import {
 
 import { RichTable } from "@plasmicpkgs/plasmic-rich-components/skinny/rich-table";
 import { tableHelpers as RichTable_Helpers } from "@plasmicpkgs/plasmic-rich-components/skinny/rich-table";
+import { FormWrapper } from "@plasmicpkgs/antd5/skinny/Form";
+import { formHelpers as FormWrapper_Helpers } from "@plasmicpkgs/antd5/skinny/Form";
+import { FormItemWrapper } from "@plasmicpkgs/antd5/skinny/FormItem";
+import { AntdInput } from "@plasmicpkgs/antd5/skinny/registerInput";
+import { inputHelpers as AntdInput_Helpers } from "@plasmicpkgs/antd5/skinny/registerInput";
+import { AntdTextArea } from "@plasmicpkgs/antd5/skinny/registerInput";
+import { inputHelpers as AntdTextArea_Helpers } from "@plasmicpkgs/antd5/skinny/registerInput";
+import { AntdButton } from "@plasmicpkgs/antd5/skinny/registerButton";
 import { Fetcher } from "@plasmicapp/react-web/lib/data-sources";
 
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -91,8 +99,11 @@ export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
   section?: Flex__<"section">;
   h1?: Flex__<"h1">;
-  text?: Flex__<"div">;
   table2?: Flex__<typeof RichTable>;
+  form?: Flex__<typeof FormWrapper>;
+  input?: Flex__<typeof AntdInput>;
+  textArea?: Flex__<typeof AntdTextArea>;
+  button?: Flex__<typeof AntdButton>;
 };
 
 export interface DefaultHomepageProps {}
@@ -171,6 +182,24 @@ function PlasmicHomepage__RenderFunc(props: {
         initFunc: ({ $props, $state, $queries, $ctx }) => undefined,
 
         onMutate: generateOnMutateForSpec("selectedRowKeys", RichTable_Helpers)
+      },
+      {
+        path: "form.value",
+        type: "private",
+        variableType: "object",
+        initFunc: ({ $props, $state, $queries, $ctx }) => undefined,
+
+        refName: "form",
+        onMutate: generateOnMutateForSpec("value", FormWrapper_Helpers)
+      },
+      {
+        path: "form.isSubmitting",
+        type: "private",
+        variableType: "boolean",
+        initFunc: ({ $props, $state, $queries, $ctx }) => false,
+
+        refName: "form",
+        onMutate: generateOnMutateForSpec("isSubmitting", FormWrapper_Helpers)
       }
     ],
     [$props, $ctx, $refs]
@@ -245,12 +274,10 @@ function PlasmicHomepage__RenderFunc(props: {
               {"Welcome to your first page."}
             </h1>
             <div
-              data-plasmic-name={"text"}
-              data-plasmic-override={overrides.text}
               className={classNames(
                 projectcss.all,
                 projectcss.__wab_text,
-                sty.text
+                sty.text__mggsJ
               )}
             >
               <React.Fragment>
@@ -384,6 +411,99 @@ function PlasmicHomepage__RenderFunc(props: {
                 />
               );
             })()}
+            {(() => {
+              const child$Props = {
+                className: classNames("__wab_instance", sty.form),
+                extendedOnValuesChange: async (...eventArgs: any) => {
+                  generateStateOnChangePropForCodeComponents(
+                    $state,
+                    "value",
+                    ["form", "value"],
+                    FormWrapper_Helpers
+                  ).apply(null, eventArgs);
+                },
+                formItems: undefined,
+                labelCol: { span: 8, horizontalOnly: true },
+                layout: "vertical",
+                mode: undefined,
+                onIsSubmittingChange: async (...eventArgs: any) => {
+                  generateStateOnChangePropForCodeComponents(
+                    $state,
+                    "isSubmitting",
+                    ["form", "isSubmitting"],
+                    FormWrapper_Helpers
+                  ).apply(null, eventArgs);
+                },
+                ref: ref => {
+                  $refs["form"] = ref;
+                },
+                wrapperCol: { span: 16, horizontalOnly: true }
+              };
+              initializeCodeComponentStates(
+                $state,
+                [
+                  {
+                    name: "value",
+                    plasmicStateName: "form.value"
+                  },
+                  {
+                    name: "isSubmitting",
+                    plasmicStateName: "form.isSubmitting"
+                  }
+                ],
+                [],
+                FormWrapper_Helpers ?? {},
+                child$Props
+              );
+
+              return (
+                <FormWrapper
+                  data-plasmic-name={"form"}
+                  data-plasmic-override={overrides.form}
+                  {...child$Props}
+                >
+                  <FormItemWrapper
+                    className={classNames(
+                      "__wab_instance",
+                      sty.formField__ucmHy
+                    )}
+                    label={"Name"}
+                    name={"name"}
+                  >
+                    <AntdInput
+                      className={classNames("__wab_instance", sty.input)}
+                    />
+                  </FormItemWrapper>
+                  <FormItemWrapper
+                    className={classNames(
+                      "__wab_instance",
+                      sty.formField___1XxSw
+                    )}
+                    label={"Message"}
+                    name={"message"}
+                  >
+                    <AntdTextArea
+                      className={classNames("__wab_instance", sty.textArea)}
+                    />
+                  </FormItemWrapper>
+                  <AntdButton
+                    className={classNames("__wab_instance", sty.button)}
+                    submitsForm={true}
+                    type={"primary"}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__qD9Ij
+                      )}
+                    >
+                      {"Submit"}
+                    </div>
+                  </AntdButton>
+                </FormWrapper>
+              );
+            })()}
           </section>
         </div>
       </div>
@@ -392,11 +512,23 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "section", "h1", "text", "table2"],
-  section: ["section", "h1", "text", "table2"],
+  root: [
+    "root",
+    "section",
+    "h1",
+    "table2",
+    "form",
+    "input",
+    "textArea",
+    "button"
+  ],
+  section: ["section", "h1", "table2", "form", "input", "textArea", "button"],
   h1: ["h1"],
-  text: ["text"],
-  table2: ["table2"]
+  table2: ["table2"],
+  form: ["form", "input", "textArea", "button"],
+  input: ["input"],
+  textArea: ["textArea"],
+  button: ["button"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -405,8 +537,11 @@ type NodeDefaultElementType = {
   root: "div";
   section: "section";
   h1: "h1";
-  text: "div";
   table2: typeof RichTable;
+  form: typeof FormWrapper;
+  input: typeof AntdInput;
+  textArea: typeof AntdTextArea;
+  button: typeof AntdButton;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -471,8 +606,11 @@ export const PlasmicHomepage = Object.assign(
     // Helper components rendering sub-elements
     section: makeNodeComponent("section"),
     h1: makeNodeComponent("h1"),
-    text: makeNodeComponent("text"),
     table2: makeNodeComponent("table2"),
+    form: makeNodeComponent("form"),
+    input: makeNodeComponent("input"),
+    textArea: makeNodeComponent("textArea"),
+    button: makeNodeComponent("button"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
